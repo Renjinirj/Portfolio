@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <!-- Background Stars -->
+    <div class="stars"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+
+        <div class="hero-cloud">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <h1>Hello, I'm</h1>
+
+        <h2>Renjini R J</h2>
+
+        <h3 class="role">
+            <span class="typing"></span>
+        </h3>
+
+        <p class="description">
+            A Computer Science graduate passionate about Artificial Intelligence,
+            Data Science, and Python development. I enjoy building intelligent,
+            user-friendly applications that combine creativity with technology,
+            while continuously learning and exploring modern AI solutions.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">
+                Explore Projects
+            </a>
+
+            <a href="#" class="btn-secondary">
+                Download Resume
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Floating Profile -->
+    <div class="profile">
+        <img src="{% static 'images/profile.png' %}" alt="Profile">
+    </div>
+
+</section>
+
+{% endblock %}
